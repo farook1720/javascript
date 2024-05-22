@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript statements</h2>
+
+    <p>JavaScript code blocks are written between { and }</p>
+
+    <p id="f"></p>
+    <p id="f1"></p>
+
+    <button onclick="myfunction()">Click Me</button>
+
+    <script>
+        function myfunction() {
+            document.getElementById("f").innerHTML = "hello mr.farook";
+            document.getElementById("f1").innerHTML = "How are you";
+        }
+    </script>
+    <h3>JavaScript Numbers</h3>
+    <p>Number can be written with or without decimals</p>
+    <p id="f2"></p>
+    <script>
+
+        document.getElementById("f2").innerHTML = 10.50;
+    </script>
+
+
+    <h3>JavaScript Strings</h3>
+    <p>Strings can be written with <b> double</b> or<b> single </b> quotes</p>
+    <p id="f3"></p>
+
+    <script>
+        document.getElementById("f3").innerHTML = 'Haysky';
+
+    </script>
+    <h2>JavaScript let</h2>
+    <p>In this example, y is defined as a variable.
+        Then, y is assigned the value of 17:</p>
+    <p id="f4"></p>
+
+    <script>
+        let y;
+        y = 17;
+        document.getElementById("f4").innerHTML = y;
+
+    </script>
+
+</body>
+
+</html>

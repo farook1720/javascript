@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Variables</h1>
+
+    <p>The dollar sign is treated as a letter in JavaScript names.</p>
+    <p id="demo"></p>
+
+    <script>
+        let $$$ = 2;
+        let $mymoney = 5;
+        document.getElementById("demo").innerHTML = $$$ + $mymoney;
+    </script>
+
+    <h1>JavaScript Variables</h1>
+    <p>The underscore is treated as a letter in JavaScript names.</p>
+    <p id="d1"></p>
+    <script>
+        let _x = 10;
+        let _100 = 20;
+        document.getElementById("d1").innerHTML = _x + _100;
+    </script>
+
+
+    <h2>Redeclaring a Variable Using var</h2>
+    <p id="d2"></p>
+    <script>
+        var x = 10;
+        {
+
+            var x = 20;
+        }
+        document.getElementById("d2").innerHTML = x;
+    </script>
+
+
+    <h2>Redeclaring a Variable Using let</h2>
+
+    <p id="d3"></p>
+    <script>
+        let y = 10;
+        {
+            let y = 20;
+        }
+
+        document.getElementById("d3").innerHTML = y;
+    </script>
+
+
+    <h2>JavaScript let</h2>
+    <p>Redeclaring a JavaScript variable with <b>var</b> is allowed anywhere in a program:</p>
+    <p id="d4"></p>
+    <script>
+        var z = 10;
+        var z = 20;
+        document.getElementById("d4").innerHTML = z;
+    </script>
+
+</body>
+
+</html>
