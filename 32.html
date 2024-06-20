@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Arithmetic</h1>
+    <h2>Operator Precedence</h2>
+    <p>Multiplication has precedence over addition.</p>
+    <p>But parenthesis has precedence over multiplication.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = (100 + 10) * 6;
+    </script>
+
+    <h1>JavaScript Arithmetic</h1>
+    <h2>Operator Precedence</h2>
+    <p>When many operations has the same precedence, they are computed from left to right.</p>
+    <p id="d1"></p>
+    <script>
+        document.getElementById("d1").innerHTML = 10 + 20 - 6;
+    </script>
+
+    <h1>JavaScript Arithmetic</h1>
+    <h2>Operator Precedence</h2>
+    <p>When many operations has the same precedence, they are computed from left to right.</p>
+    <p id="d2"></p>
+    <script>
+        document.getElementById("d2").innerHTML = 100 / 50 * 6;
+    </script>
+
+    <h1>JavaScript Assignments</h1>
+    <h2>Simple Assignment</h2>
+    <h3>The = Operator</h3>
+    <p id="d3"></p>
+    <script>
+        let x = 10;
+        document.getElementById("d3").innerHTML = "Value of x is:" + x;
+    </script>
+
+    <h1>JavaScript Assignments</h1>
+    <h2>Simple Assignment</h2>
+    <h3>The = Operator</h3>
+    <p id="d4"></p>
+
+    <script>
+        let y = 20;
+        q = y + 10;
+        document.getElementById("d4").innerHTML = "Value of q is :" + q;
+
+    </script>
+
+    <h1>JavaScript Assignments</h1>
+    <h2>Addition Assignment</h2>
+    <h3>The += Operator</h3>
+    <p id="d5"></p>
+    <script>
+        let d = 10
+        d += 7
+        document.getElementById("d5").innerHTML = "Value of d is: " + d;
+    </script>
+
+    <h1>JavaScript Assignments</h1>
+    <h2>Addition Assignment</h2>
+    <h3>The += Operator</h3>
+    <p id="d6"></p>
+    <script>
+        let Text = "Hello";
+        Text += "World";
+        document.getElementById("d6").innerHTML = Text;
+    </script>
+
+    <h1>JavaScript Assignments</h1>
+    <h2>Subtraction Assignment</h2>
+    <h3>The -= Operator</h3>
+    <p id="d7"></p>
+    <script>
+        let z = 10
+        z -= 5
+        document.getElementById("d7").innerHTML = z;
+    </script>
+
+    <h1>JavaScript Assignments</h1>
+    <h2>Multiplication Assignment</h2>
+    <h3>The *= Operator</h3>
+    <p id="d8"></p>
+    <script>
+        let t = 10
+        t *= 5
+        document.getElementById("d8").innerHTML = +t;
+    </script>
+</body>
+
+</html>

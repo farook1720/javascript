@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Assignments</h1>
+    <h2>Bitwise XOR Assignment</h2>
+    <h3>The ^= Operator</h3>
+    <p id="demo"></p>
+    <script>
+        let x = 100
+        x ^= 5
+        document.getElementById("demo").innerHTML = "Value of x is :" + x;
+    </script>
+
+    <h1>JavaScript Assignments</h1>
+    <h2>Logical AND Assignment</h2>
+    <h3>The &&= Operator</h3>
+    <p>If the first value is true, the second value is assigned.</p>
+    <p id="d"></p>
+    <script>
+        let c = 100
+        c &&= 5
+        document.getElementById("d").innerHTML = "value of c is: " + c;
+    </script>
+
+    <h1>JavaScript Assignments</h1>
+    <h2>Logical OR Assignment</h2>
+    <h3>The ||= Operator</h3>
+
+    <p>If the first value is false, the second value is assigned:</p>
+    <p id="d1"></p>
+    <script>
+        let z = undefined
+        z ||= 5
+        document.getElementById("d1").innerHTML = "Value of z is: " + z;
+    </script>
+
+    <h1>JavaScript Assignments</h1>
+    <h2>The ??= Operator</h2>
+    <p>The ??= operator is used between two values. If the first value is undefined or null, the second value is
+        assigned.</p>
+    <p id="d2"></p>
+    <script>
+        let v;
+        document.getElementById("d2").innerHTML = v ??= 5;
+    </script>
+
+    <h2>JavaScript</h2>
+
+    <p>When adding a string and a number, JavaScript will treat the number as a string.</p>
+
+    <p id="d3"></p>
+    <script>
+        let b = "Volvo" + 17;
+        // or b=17+"Volvo" 17Volvo
+        document.getElementById("d3").innerHTML = b;
+    </script>
+    <h2>JavaScript</h2>
+
+    <p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p>
+    <p id="d4"></p>
+    <script>
+        let n = 17 + 20 + "Innova";
+        document.getElementById("d4").innerHTML = n;
+    </script>
+
+    <h2>JavaScript</h2>
+
+    <p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p>
+
+    <p id="d5"></p>
+    <script>
+        let m = "Innova" + 17 + 20;
+        document.getElementById("d5").innerHTML = m;
+    </script>
+
+
+</body>
+
+</html>

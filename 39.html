@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Objects</h1>
+    <p>An object method is a function definition stored as a property value.</p>
+    <p>If you access it without (), it will return the function definition:</p>
+
+    <p id="d"></p>
+
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Mark",
+            id: 1234,
+
+            FullName: function () {
+                return this.firstName + "" + this.lastName;
+
+            }
+        }
+
+        document.getElementById("d").innerHTML = person.FullName;
+    </script>
+
+
+    <h1>JavaScript Objects</h1>
+    <h2>Adding a Method</h2>
+    <p id="d1"></p>
+    <script>
+        // Create an Object
+        const person1 = {
+            firstName: "Ahmed ",
+            lastName: " Hussain",
+            id: 1717,
+        }
+        person1.name = function () {
+            return (this.firstName + "" + this.lastName);
+
+
+
+        }
+
+        // Display Object Data
+
+        document.getElementById("d1").innerHTML = "My father Name is  " + person1.name();
+    </script>
+
+
+    <h1>JavaScript Objects</h1>
+    <p id="d2"></p>
+    <script>
+        // Create an Object
+        const person2 = {
+            firstName: "ahmed ",
+            lastName: " hussain",
+            id: 1243,
+        }
+
+        // Add a Method
+        person2.name = function () {
+            return (this.firstName + "" + this.lastName).toUpperCase();
+
+        }
+        // Display Object Data
+
+        document.getElementById("d2").innerHTML = "My father name is " + person2.name();
+    </script>
+
+    <h1>JavaScript Objects</h1>
+    <p>Displaying a JavaScript object will output [object Object]:</p>
+    <p id="d3"></p>
+    <script>
+        const person3 = {
+            name: "Vira",
+            age: 27,
+            city: "KNL",
+        }
+
+        document.getElementById("d3").innerHTML = person3;
+    </script>
+
+    <h1>JavaScript Objects</h1>
+    <h2>Displaying Properties</h2>
+    <p id="d4"></p>
+    <script>
+        // create an Object
+
+        const person4 = {
+            name: "Vira",
+            age: "28",
+            city: "knl"
+        };
+        // Displaying Properties
+
+        document.getElementById("d4").innerHTML = person4.name + " ," + "<br>" + person4.age + " ," + "<br>" + person4.city;
+    </script>
+
+    <h1>JavaScript Objects</h1>
+    <h2>Display Properties</h2>
+    <p id="d5"></p>
+    <script>
+        // create an Object
+        const person5 = {
+            name: "Vira ",
+            age: " 27",
+            city: " knl"
+
+        };
+
+        // Build a Text
+
+        let text = "";
+        for (let x in person5) {
+            text += person5[x] + "";
+
+        };
+
+        // Display the Text
+
+        document.getElementById("d5").innerHTML = text;
+    </script>
+    <h1>JavaScript Objects</h1>
+    <h2>The Object.entries() Method</h2>
+    <p>Object.entries() makes it simple to use objects in loops:</p>
+    <p id="d6"></p>
+    <script>
+        const fruits = { banana: 100, oranges: 200, apples: 300 };
+
+        let text1 = "";
+        for (let [fruit, amount] of Object.entries(fruits)) {
+            text1 += fruit + ":" + amount + "<br>";
+
+        }
+
+        document.getElementById("d6").innerHTML = text1;
+    </script>
+
+    <h1>JavaScript Objects</h1>
+    <h2>Display Properties with JSON</h2>
+    <p id="d7"></p>
+    <script>
+        // create an object
+        const person6 = {
+            name: "Vira",
+            age: 32,
+            city: "knl"
+        }
+
+        // display JSON
+        // document.getElementById("d7").innerHTML = JSON.stringify(person6);
+
+        // or
+
+        // Stringify Object
+        let myString = JSON.stringify(person6);
+
+        // Display String
+        document.getElementById("d7").innerHTML = myString;
+    </script>
+
+
+</body>
+
+</html>

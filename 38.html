@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Objects</h1>
+    <h2>Creating an Object</h2>
+
+    <p id="d"></p>
+    <script>
+        const car = { "type": "Fait", "model": 500, color: "red" }
+        document.getElementById("d").innerHTML = "The car type is " + car.type + "<br>" + "The car color is " + car.color;
+    </script>
+
+    <h1>Creating JavaScript Objects</h1>
+    <h2>Using an Object Literal</h2>
+
+    <p id="d1"></p>
+
+    <script>
+
+        //const person = {
+        //   firstName: "John",
+        //   lastName: "Doe",
+        //   age: 50,
+        //   eyeColor: "blue"
+        // }; (or)
+        const person = { firstName: "Farook ", lastName: "Basha", age: "25", }
+
+        document.getElementById("d1").innerHTML = person.firstName + "is " + person.age + " years old.";
+    </script>
+
+    <h1>Creating JavaScript Objects</h1>
+    <h2>Using an Object Literal</h2>
+    <p id="d2"></p>
+    <script>
+        const person1 = {};
+        person.firstName = "Farook";
+        person.lastName = "Basha";
+        person.age = 25;
+        person.eyecolor = "bue";
+
+        document.getElementById("d2").innerHTML = person.firstName + " is " + person.age + " years old. ";
+
+    </script>
+
+    <h1>Creating JavaScript Objects</h1>
+    <h2>Using the new Keyword</h2>
+
+    <p id="d3"></p>
+    <script>
+        // Create an Object
+        const person2 = new Object();
+        person.firstName = "Basha";
+        person.lastName = "Syed";
+        person.age = 25;
+        person.eyecolor = "Green";
+
+        document.getElementById("d3").innerHTML = person.firstName + " is " + person.age + " years old. ";
+
+
+    </script>
+
+    <h1>JavaScript Objects</h1>
+    <p>There are two ways to access a property: object.property or object["property"]</p>
+    <p id="d4"></p>
+
+    <script>
+        // Create an Object:
+
+        const person3 = {
+            firstName: "Raj",
+            lastName: "kumar",
+            id: 1717,
+        }
+        document.getElementById("d4").innerHTML = " The Last Nmae is " + person.lastName;
+
+
+        //    (or)     document.getElementById("d4").innerHTML =
+        // "The last name is " +  person["lastName"];
+    </script>
+
+    <h1>JavaScript Objects</h1>
+    <h2>Object Methods</h2>
+    <p>A method is a function definition stored as a property value.</p>
+    <p id="d5"></p>
+
+    <script>
+        const person4 = {
+            firstNam: "SYED ",
+            lastNam: " FAROOK",
+            id: 1212,
+            FullName: function () {
+
+                return this.firstNam + "" + this.lastNam;
+
+            }
+
+        };
+
+        document.getElementById("d5").innerHTML = person4.FullName();
+    </script>
+
+
+    <h1>JavaScript Objects</h1>
+    <h2>Object Methods</h2>
+    <p>A method is a function definition stored as a property value.</p>
+
+    <p id="d6"></p>
+    <script>
+        const person5 = {
+            firstName: "Raj ",
+            lastName: " kumar ",
+            id: 1212,
+
+            FullName: function () {
+
+                return this.firstName + "" + this.lastName;
+
+            }
+
+        };
+
+        document.getElementById("d6").innerHTML = person5.FullName();
+    </script>
+</body>
+
+</html>

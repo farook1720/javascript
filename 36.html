@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript Booleans</h2>
+
+    <p>Booleans can have two values: true or false:</p>
+    <p id="d"></p>
+    <script>
+        let x = 17
+        let y = 17
+        let z = 6
+
+        document.getElementById("d").innerHTML = (x == y) + "<br>" + (x == z);
+
+    </script>
+
+    <h2>JavaScript Arrays</h2>
+
+    <p>Array indexes are zero-based, which means the first item is [0].</p>
+    <p id="d1"></p>
+
+    <script>
+        let cars = ["saab", "Volvo", "BMW"];
+        document.getElementById("d1").innerHTML = cars[0] + "<br>" + cars[1] + "<br>" + cars[2];
+    </script>
+    <h2>JavaScript Objects</h2>
+
+    <p id="d2"></p>
+    <script>
+        const person = {
+            firstName: "farook",
+            lastName: "basha",
+            age: "27",
+            eyeColor: "blue"
+
+        };
+        document.getElementById("d2").innerHTML = person.firstName + " is " + person.age + " years old. ";
+    </script>
+
+    <h1>JavaScript Operators</h1>
+    <h2>The typeof Operator</h2>
+    <p>The typeof operator returns the type of a variable or an expression.</p>
+    <p id="d3"></p>
+    <script>
+        document.getElementById("d3").innerHTML = typeof "" + "<br>" + typeof "John" + "<br>" + typeof "John d"
+    </script>
+
+    <h1>JavaScript Operators</h1>
+    <h2>The typeof Operator</h2>
+    <p>The typeof operator returns the type of a variable or an expression.</p>
+
+    <p id="d4"></p>
+    <script>
+        document.getElementById("d4").innerHTML = typeof 0 + "<br>" + typeof 314 + "<br>" + typeof 3.24 + "<br>" + typeof (20) + "<br>" + typeof (10 + 10);
+
+    </script>
+
+    <h1>JavaScript Operators</h1>
+    <h2>The typeof Operator</h2>
+    <p>The value (and the data type) of a variable with no value is <b>undefined</b>.</p>
+
+    <p id="d5"></p>
+    <script>
+        let car; // Value is undefined, type is undefined
+        document.getElementById("d5").innerHTML = car + "<br>" + typeof car;
+    </script>
+
+
+    <h1>JavaScript Operators</h1>
+    <h2>The typeof Operator</h2>
+    <p>Variables can be emptied if you set the value to <b>undefined</b>.</p>
+    <p id="d6"></p>
+    <script>
+        let carss = "Vovlo";
+        carss = undefined;
+        document.getElementById("d6").innerHTML = "<p>The Value of car is  " + carss + "<p>The typeof car is  " + carss;
+    </script>
+
+    <h1>JavaScript Datatypes</h1>
+
+    <p>An empty string has both a legal value and a type:</p>
+
+    <p id="d7"></p>
+
+    <script>
+        let bus = "";
+        document.getElementById("d7").innerHTML = "The Value of bus is: " + bus + "<br>" + "The Typeof bus is: " + typeof bus;
+    </script>
+
+</body>
+
+</html>
