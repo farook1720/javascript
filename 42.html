@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Object Constructors</h1>
+    <button onclick="run()">OK</button>
+    <input type="number" onchange="run2(this)">
+    <p id="d"></p>
+    <script>
+        function run() {
+            alert('hai')
+        }
+        function run2(inp) {
+            console.log(inp.value);
+        }
+    </script>
+
+    <h1>JavaScript Object Constructors</h1>
+
+    <p id="d"></p>
+    <script>
+        document.getElementById("d").innerHTML =
+            "<p> The typeof new Object() is " + typeof new Object() + "</p>" +
+            "<p> The typeof new Array() is " + typeof new Array() + "</p>" +
+            "<p> The typeof new Map() is " + typeof new Map() + "</p>" +
+            "<p> The typeof new Set() is " + typeof new Set() + "</p>" +
+            "<p> The typeof new Date() is " + typeof new Date() + "</p>" +
+            "<p> The typeof new RegExp() is " + typeof new RegExp() + "</p>" +
+            "<p> The typeof new Function() is " + typeof new Function() + "</p>";
+    </script>
+</body>

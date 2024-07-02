@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Strings</h1>
+    <p id="d"></p>
+
+    <script>
+        let x = "John"; // x is a string
+
+        let y = new String("John"); // y is an object
+
+        document.getElementById("d").innerHTML = typeof x + "<br>" + typeof y;
+    </script>
+
+    <h2>Never Create Strings as Objects</h2>
+    <p>Strings and objects cannot be safely compared.</p>
+
+    <p id="d1"></p>
+    <script>
+        let a = "John";
+        let b = new String("John");
+        document.getElementById("d1").innerHTML = (a == b);
+    </script>
+
+    <h2>Never Create Strings as Objects</h2>
+    <p>Strings and objects cannot be safely compared.</p>
+
+    <p id="d2"></p>
+
+    <script>
+        let q = "John";
+        let w = new String("John");
+        document.getElementById("d2").innerHTML = (q === w)
+    </script>
+
+    <h2>Never Create Strings as Objects</h2>
+    <p>JavaScript objects cannot be compared.</p>
+
+    <p id="d3"></p>
+
+    <script>
+        let e = new String("John");
+        let f = new String("John");
+        document.getElementById("d3").innerHTML = (e == f);
+    </script>
+
+    <h2>Never Create Strings as Objects</h2>
+    <p>JavaScript objects cannot be compared.</p>
+
+    <p id="d4"></p>
+
+    <script>
+        let r = new String("John");
+        let t = new String("John");
+        document.getElementById("d4").innerHTML = (r === t);
+    </script>
+</body>
+
+</html>

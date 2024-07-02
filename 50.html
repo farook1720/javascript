@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Loops</h1>
+    <p id="d"></p>
+    <script>
+        const cars = ["BMW", "Audi", "Saab", "Ford"]
+        let i = 2;
+        const len = cars.length;
+        let text = "";
+
+        for (; i < len; i++) {
+            text += cars[i] + "<hr>"
+        }
+        document.getElementById("d").innerHTML = text;
+        // document.getElementById("d").innerHTML = text;
+
+    </script>
+    <h2>JavaScript Loops</h2>
+    <p id="d1"></p>
+    <script>
+        const cars1 = ["BMW", "Saab", "Audi", "Ford"];
+
+        const len1 = cars1.length;
+        let text1 = "";
+
+        for (i = 1; i < len;) {
+            text1 += cars1[i] + "<br>";
+            i++;
+        }
+
+        document.getElementById("d1").innerHTML = text1;
+    </script>
+
+    <h2>JavaScript let</h2>
+    <p id="d2"></p>
+    <script>
+
+        var a = 5;
+        for (var a = 0; a < 10; a++) {
+
+
+        }
+
+        document.getElementById("d2").innerHTML = a;
+    </script>
+
+
+
+</body>
+
+</html>

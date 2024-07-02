@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript String</h1>
+    <h2>The charAt() Method</h2>
+    <p>The charAt() method returns the character at a given position in a string:</p>
+    <p id="d"></p>
+    <script>
+        let text = "HELLO WORLD";
+        document.getElementById("d").innerHTML = text.charAt(1);
+    </script>
+
+
+    <h1>JavaScript String</h1>
+    <h2>The charCodeAt() Method</h2>
+
+    <p>The charCodeAt() method returns the unicode of the character at a given position in a string:</p>
+
+    <p id="d1"></p>
+
+    <script>
+        let text1 = "HELLO WORLD";
+        document.getElementById("d1").innerHTML = text1.charCodeAt(0);
+    </script>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The at() Method</h2>
+
+    <p>The at() method returns an indexed element from a string:</p>
+    <p id="d2"></p>
+    <script>
+        const name = "W3Schools";
+        let letter = name.at(2);
+        document.getElementById('d2').innerHTML = letter;
+    </script>
+
+    <h1>JavaScript Strings</h1>
+    <h2>Bracket Notation</h2>
+
+    <p>The bracked notation [] returns an indexed element from a string:</p>
+    <p id="d3"></p>
+    <script>
+        const name1 = "W3Schools";
+        let letter1 = name.at[2];
+        document.getElementById('d3').innerHTML = letter;
+    </script>
+
+    <h1>JavaScript Strings</h1>
+    <p>Property access on strings:</p>
+
+    <p>The first character in the string is:</p>
+    <p id="d4"></p>
+
+    <script>
+        let text2 = "HELLOW WORLD";
+        document.getElementById('d4').innerHTML = text2[7];
+    </script>
+    <h1>JavaScript Strings</h1>
+    <p>Property acces on strings are read only:</p>
+    <p id="d5"></p>
+
+    <script>
+        let text3 = "HELLO WORLD";
+        text3[0] = "A";  // Does not work
+
+        document.getElementById("d5").innerHTML = text3;
+    </script>
+
+
+    <h1>JavaScript Strings</h1>
+    <h2>The slice() Method</h2>
+
+    <p>The sliced (extracted) part of the string is:</p>
+    <p id="d6"></p>
+    <script>
+        let text4 = "Apple,Banana,Kiwi ";
+        let part = text4.slice(0, 5);
+        let part1 = text4.slice(6, 12);
+        let part2 = text4.slice(13, 17);
+        let part3 = text4.slice(6);
+        document.getElementById("d6").innerHTML = part + "<br>" + part1 + "<br>" + part2 + "<br>" + part3;
+        console.log(part3);
+    </script>
+    <h1>JavaScript Strings</h1>
+    <h2>The slice() Method</h2>
+
+    <p>Extract a part of a string counting from the end:</p>
+    <p id="d7"></p>
+
+    <script>
+        let text5 = "Apple, Banana, Kiwi";
+        let part4 = text5.slice(-12);
+        let part5 = text5.slice(-12, -6);
+        let part6 = text5.slice(-5);
+        document.getElementById("d7").innerHTML = part4 + "<hr>" + part5 + "<hr>" + part6;
+    </script>
+
+    <h1>JavaScript String Methods</h1>
+    <p>The substring() method extract a part of a string and returns the extracted parts in a new string:</p>
+
+    <p id="d8"></p>
+    <script>
+        let str = "Apple, Banana, Kiwi";
+        document.getElementById("d8").innerHTML = str.substring(7, 13) + "<hr>" + str.substr(7, 6) + "<hr>" + str.substr(7) + "<hr>" + str.substr(-4) + "<br>" + str.substr(0, 5) + "<hr>";
+    </script>
+
+
+
+
+</body>
+
+</html>

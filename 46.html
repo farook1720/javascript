@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>JavaScript String Methods</h1>
+<p>Convert string to upper case:</p>
+<Button onclick="myFunction1()">Change It</Button>
+<p id="d">hellow world.</p>
+<script>
+    function myFunction1() {
+        let text = document.getElementById("d").innerHTML;
+        document.getElementById("d").innerHTML = text.toUpperCase();
+
+    }
+</script>
+
+<h1>JavaScript String Methods</h1>
+<p>Convert string to lower case:</p>
+
+<Button onclick="myFunction()">Change It</Button>
+<p id="d1">HELOW WORLD!</p>
+<script>
+    function myFunction() {
+        let text = document.getElementById("d1").innerHTML;
+        document.getElementById("d1").innerHTML = text.toLocaleLowerCase();
+
+    }
+</script>
+
+<h1>JavaScript String</h1>
+<h2>The concat() Method</h2>
+
+<p>The concat() method joins two or more strings:</p>
+
+<p id="d2"></p>
+
+<script>
+    let text1 = "Hello";
+    let text2 = "World!";
+    let text3 = "HOW R U";
+    let text4 = text1.concat(" ", text2, " ", text3);
+    document.getElementById("d2").innerHTML = text4;
+</script>
+
+<h1>JavaScript Strings</h1>
+<h2>The trim() Method</h2>
+<p id="d3"></p>
+<script>
+    let text6 = "      Hellow";
+    let text7 = text6.trim();
+    document.getElementById("d3").innerHTML = "Length text6= " + text6.length + "<br> Length text7=" + text7.length;
+</script>
+
+<h1>JavaScript Strings</h1>
+<h2>The trimStart() Method</h2>
+
+<p id="d4"></p>
+
+<script>
+    let text8 = "     Hello World!     ";
+    let text9 = text8.trimStart();
+
+    document.getElementById("d4").innerHTML =
+        "Length text8 = " + text8.length + "<hr>Length text9 = " + text9.length;
+</script>
+
+<h1>JavaScript Strings</h1>
+<h2>The trimEnd() Method</h2>
+<p id="d5"></p>
+<script>
+    let text10 = "      HELLO WORLD!      ";
+    let text11 = text10.trimEnd();
+    document.getElementById("d5").innerHTML = "Length  text10=" + text10.length + "<br> Length text11=" + text11.length;
+</script>
+
+
+
+</body>
+
+</html>

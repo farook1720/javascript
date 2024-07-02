@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The padStart() Method</h2>
+
+    <p>The padStart() method pads a string from the start.</p>
+    <p>It pads the string with another string (multiple times) until it reaches a given length.</p>
+    <p id="d"></p>
+    <script>
+        let text = "5";
+        text = text.padStart(4, "0");
+        document.getElementById("d").innerHTML = text;
+    </script>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The padStart() Method</h2>
+
+    <p>The padStart() method pads a string from the start.</p>
+    <p>It pads the string with another string (multiple times) until it reaches a given length.</p>
+
+    <p id="d1"></p>
+
+    <script>
+        let text1 = "6";
+        document.getElementById("d1").innerHTML = text1.padStart(3, "f");
+    </script>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The padStart() Method</h2>
+
+    <p>The padStart() method pads a string from the start.</p>
+    <p>It pads the string with another string (multiple times) until it reaches a given length.</p>
+    <p id="d2"></p>
+
+    <script>
+        let numb = 6;
+        text = numb.toString();
+        document.getElementById("d2").innerHTML = text.padStart(5, 0);
+    </script>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The padEnd() Method</h2>
+
+    <p>The padEnd() method pads a string at the end.</p>
+    <p>It pads the string with another string (multiple times) until it reaches a given length.</p>
+    <p id="d3"></p>
+    <script>
+        let text2 = "6";
+        text3 = text2.padEnd(5, 0);
+        document.getElementById("d3").innerHTML = text3;
+    </script>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The padEnd() Method</h2>
+
+    <p>The padEnd() method pads a string at the end.</p>
+    <p>It pads the string with another string (multiple times) until it reaches a given length.</p>
+    <p id="d4"></p>
+    <script>
+        let text4 = "6";
+        document.getElementById("d4").innerHTML = text4.padEnd(3, 0);
+    </script>
+    <h1>JavaScript Strings</h1>
+    <h2>The padEnd() Method</h2>
+
+    <p>The padEnd() method pads a string at the end.</p>
+    <p>It pads the string with another string (multiple times) until it reaches a given length.</p>
+    <p id="d5"></p>
+    <script>
+        let text5 = "7";
+        document.getElementById("d5").innerHTML = text5.padEnd(3, "c");
+    </script>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The padEnd() Method</h2>
+
+    <p>The padEnd() method pads a string at the end.</p>
+    <p>It pads the string with another string (multiple times) until it reaches a given length.</p>
+
+
+    <p id="d6"></p>
+    <script>
+        let numb1 = 6;
+        let text6 = numb1.toString();
+        document.getElementById("d6").innerHTML = text6.padEnd(5, "m");
+
+    </script>
+
+    <h1>JavaScript String Methods</h1>
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+    <Button onclick="myFunction()">Try It!</Button>
+    <p id="d7">Please visit Microsoft!</p>
+    <script>
+        function myFunction() {
+            let text7 = document.getElementById("d7").innerHTML;
+            document.getElementById("d7").innerHTML = text7.replace("Microsoft", "W3Schools!");
+
+        }
+    </script>
+
+
+</body>
+
+</html>
