@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript While Loop</h2>
+    <p id="d"></p>
+    <script>
+        let text = "";
+        let i = 0;
+        while (i <= 11) {
+            text += "<br> This number is " + i;
+            i++;
+        }
+
+        document.getElementById("d").innerHTML = text;
+    </script>
+
+    <h2>JavaScript Do While Loop</h2>
+    <p id="d1"></p>
+    <script>
+        let txt = "";
+        let a = 0;
+        do {
+            txt += "<br> This number is " + a;
+            a++;
+        }
+
+        while (a < 10) {
+
+        }
+        document.getElementById("d1").innerHTML = txt;
+    </script>
+
+
+    <h2>JavaScript Functions</h2>
+
+    <p>This example creates an object with 3 properties (firstName, lastName, fullName).</p>
+    <p>The fullName property is a method:</p>
+    <p id="d2"></p>
+    <script>
+        const myObject = {
+            fristName: "John ",
+            lastName: "Deo",
+            fullName: function () {
+                return this.fristName + "" + this.lastName;
+
+            }
+
+        }
+        document.getElementById("d2").innerHTML = myObject.fullName();
+
+    </script>
+
+    <h2>JavaScript Functions</h2>
+    <p>This example calls the fullName method of person, using it on person1:
+    </p>
+    <p id="d3"></p>
+    <script>
+        const person = {
+            fullName: function () {
+                return this.fristName + "" + this.lastName;
+
+            }
+        }
+
+        const person1 = {
+            fristName: "John",
+            lastName: "Doe",
+        }
+        const person2 = {
+            fristName: "Merry",
+            lastName: " Doe",
+        }
+
+        document.getElementById("d3").innerHTML = person.fullName.call(person2);
+
+    </script>
+
+
+    <h2>JavaScript Functions</h2>
+    <p>This example calls the fullName method of person, using it on person1:
+    </p>
+
+    <script>
+
+
+    </script>
+</body>
+
+</html>

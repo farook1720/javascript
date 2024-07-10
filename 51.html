@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript For In Loop</h2>
+    <p>The for in statement loops through the properties of an object:</p>
+    <p id="d"></p>
+    <script>
+        const person = { fname: "John ", lname: "Deo ", age: 25 }
+        let txt = "";
+        for (let x in person) {
+            txt += person[x] + "";
+
+        }
+
+        document.getElementById("d").innerHTML = txt;
+    </script>
+
+    <h1>JavaScript Arrays</h1>
+    <h2>For In Loops</h2>
+    <p>The for in statement can loops over array values:</p>
+    <p id="d1"></p>
+    <script>
+        const Numbers = [23, 45, 67, 687, 5658,];
+        let txtt = "";
+
+        for (let x in Numbers) {
+            txtt += Numbers[x] + "<br>";
+        }
+        document.getElementById("d1").innerHTML = txtt;
+    </script>
+
+    <h1>JavaScript Arrays</h1>
+    <h2>The forEach() Method</h2>
+
+    <p>Call a function once for each array element:</p>
+    <p id="d2"></p>
+    <script>
+        const number = [23, 443, 3445, 34545]
+        let txt1 = "";
+        number.forEach(myFunction);
+        document.getElementById("d2").innerHTML = txt1;
+
+
+
+        function myFunction(value, index, array) {
+            txt1 += value + "<br>";
+
+        }
+    </script>
+
+
+    <h1>JavaScript Arrays</h1>
+    <h2>The forEach() Method</h2>
+
+    <p>Call a function once for each array element:</p>
+    <p id="d3"></p>
+    <script>
+        const number1 = [23, 44, 344, 3455]
+        let txt2 = "";
+        number1.forEach(myFunction);
+        document.getElementById("d3").innerHTML = txt2;
+
+
+
+        function myFunction(value) {
+            txt2 += value + "<br>";
+
+        }
+
+    </script>
+
+
+    <h2>JavaScript For Of Loop</h2>
+    <p>The for of statement loops through the values of any iterable object:</p>
+    <p id="d4"></p>
+
+    <script>
+        const cars = ["BMW", "Audi", "Inova"]
+        let text = "";
+        for (let x of cars) {
+            text += x + "<br>";
+            document.getElementById("d4").innerHTML = text;
+
+        }
+    </script>
+
+
+    <h2>JavaScript For Of Loop</h2>
+
+    <p>The for of statement loops through the values of an iterable object.</p>
+    <p id="d5"></p>
+
+    <script>
+        let language = "Javascript";
+
+        let text1 = "";
+        for (let x of language) {
+            text1 += x + "<hr>";
+            document.getElementById("d5").innerHTML = text1;
+        }
+
+
+    </script>
+</body>
+
+</html>
